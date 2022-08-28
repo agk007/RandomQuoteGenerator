@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+a{
+  color: white;
+  font-weight: 300;
+  font-size: larger;
+}
+a.active{
+  font-weight: 580;   
+}
+body{
+  color: white;
+  background-image: linear-gradient(to right, #45269a, #4e2baf, #5830c4, #6136d9, #6b3bef);
+}
+svg{
+  color: white;
+}
