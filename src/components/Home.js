@@ -135,6 +135,7 @@ function Home({ bmId, userData, fetchUsers, filterRandom, addBookmark }) {
           displayValue="name"
           placeholder=""
           style={{
+            
             searchBox: {
               "justify-content":"center",
               background:"#d9d9d9",
@@ -149,6 +150,11 @@ function Home({ bmId, userData, fetchUsers, filterRandom, addBookmark }) {
             multiselectContainer: {
               color: "purple",
             },
+            option: { 
+              
+
+             
+              },
             
           }}
         />

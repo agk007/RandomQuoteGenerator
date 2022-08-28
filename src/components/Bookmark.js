@@ -83,7 +83,8 @@ useEffect(() => {
       <footer class="absolute mt-2">
      
       </footer>
-      <ToastContainer autoClose={2000} />
+      <ToastContainer hideProgressBar
+ autoClose={2000} />
       </>
 
    

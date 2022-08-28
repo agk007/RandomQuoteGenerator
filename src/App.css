@@ -16,3 +16,15 @@ body{
 svg{
   color: white;
 }
+li.option.highlightOption.highlight{
+  color: #cdc8dd;
+  background-color: #6b3bef;
+  
+
+}
+li.option.highlightOption.highlight:focus{
+  color: #4e2baf;
+  background-color: #6b3bef;
+  
+
+}
