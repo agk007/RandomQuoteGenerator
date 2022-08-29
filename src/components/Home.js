@@ -6,9 +6,10 @@ import Multiselect from "multiselect-react-dropdown";
 import Header from "./Header";
   import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { hover } from "@testing-library/user-event/dist/hover";
 
 
-let a = [];
+let a = "";
 
 function Home({ bmId, userData, fetchUsers, filterRandom, addBookmark }) {
 
@@ -18,10 +19,10 @@ function Home({ bmId, userData, fetchUsers, filterRandom, addBookmark }) {
   const [loading, setLoading] = useState(false);
   const [drop, setDrop] = useState();
   const handleChange = (e, val) => {
-    a = [...a, val.name];
+    a = val.name;
   };
   const removeChange = (e, val) => {
-    a = a.filter((v) => v !== val.name);
+    a = "";
   };
 
   useEffect(() => {
@@ -147,11 +148,12 @@ function Home({ bmId, userData, fetchUsers, filterRandom, addBookmark }) {
               background: "indigo",
               color:"white"
             },
-            multiselectContainer: {
+            multiselectContainer:{
+              
               color: "purple",
             },
             option: { 
-              
+             
 
              
               },

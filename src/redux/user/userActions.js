@@ -15,7 +15,6 @@ export const fetchUsers = () => {
       .get('https://api.quotable.io/random')
       .then(response => {
         // response.data is the users
-        console.log(response.data)
         const users = response.data
         dispatch(fetchUsersSuccess(users))
       })
@@ -26,11 +25,11 @@ export const fetchUsers = () => {
   }
 }
 export const filterRandom = (a) => {
-  console.log('https://api.quotable.io/random?tags='+a.toString())
+  console.log('https://api.quotable.io/random?tags='+a)
   return (dispatch) => {
     dispatch(fetchUsersRequest())
     axios
-      .get('https://api.quotable.io/random?tags='+a.toString())
+      .get('https://api.quotable.io/random?tags='+a)
       .then(response => {
         // response.data is the users
         const users = response.data
